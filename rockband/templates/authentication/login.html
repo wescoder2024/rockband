@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+
+{% block content %}
+<style>
+    .container-sm{
+        text-align: center;
+        font-weight: bold;
+        font-family:'Courier New', Courier, monospace;
+        color: white;
+        margin-top: 50px;
+        margin-bottom: 600px;
+        margin-right: 600px;
+        margin-left: 600px;
+        padding: 100px;
+        border: 10px solid black;
+        background-color:black;
+    }
+    input{
+        background-color: white;
+        color: black;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+    a{
+        color: white;
+    }
+</style>
+
+<div class="container-sm">
+<h1> Login as User </h1>
+
+<form action="{% url 'rockband:authenticate_user' %}" method="post">
+    {% csrf_token %}
+
+    <label>Username</label>
+    <input type="text" name="username" placeholder="User" required>
+    <br/><br/>
+
+    <label>Password</label>
+    <input type="password" name="password" required>
+    <br/><br/>
+
+    <input type="submit" value="Login" />
+    <br>
+    <br>
+    <a href="{% url 'home' %}">back</a>
+</form>
+</div>
+{% endblock %}

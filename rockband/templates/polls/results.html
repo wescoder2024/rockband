@@ -1,0 +1,51 @@
+<!--Used W3 schools for bootstap-->
+{% extends "base.html" %}
+{% block content %}
+<style>
+    .container-sm{
+        margin-top: 100px;
+        margin-bottom: 100px;
+        margin-right: 600px;
+        margin-left: 600px;
+        padding-bottom:80px;
+        padding-left: 100px;
+        padding-right: 100px;
+        text-align: center;
+        border: 4px solid white;
+        background-color: black;
+    }
+    h1{
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        color:white;
+    }
+    li{
+        color: white;
+        font-family:Verdana, Geneva, Tahoma, sans-serif ;
+    }
+    a{
+        color: white;
+    }
+
+</style>
+
+<div class="container-sm">
+    <h1> {{ question.question_text }} </h1>
+
+    <ul>
+        {% for choice in question.choice_set.all %}
+        <li>
+            {{ choice.choice_text }} -- {{ choice.votes}}
+            vote{{choice.votes|pluralize}}
+        </li>
+        <br>
+        <br>
+        {% endfor %}
+    </ul>
+    <a href="{% url 'rockband:detail' question.id %}">
+        Vote again?
+    </a>
+    <br>
+    <br>
+    <a href="{% url 'home' %}">home</a>
+</div>
+{% endblock %}

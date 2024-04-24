@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+
+{% block content %}
+<style>
+  .container-sm{
+      text-align: center;
+      font-weight: bold;
+      font-family:Arial, Helvetica, sans-serif;
+      color: red;
+      margin-top: 50px;
+      margin-bottom: 600px;
+      margin-right: 600px;
+      margin-left: 600px;
+      padding: 100px;
+      border: 10px solid white;
+      background-color:black;
+  }
+  input{
+        background-color: white;
+        color: black;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+</style>
+
+<div class="container-sm" >
+<form action="{% url 'rockband:register_user' %}" method="post">
+    {% csrf_token %}
+  
+    <label>Username</label>
+      <input type="text" name="username" placeholder="User" required>
+      <br>
+      <br>
+      <br>
+    <label>Password</label>
+      <input type="password" name="password" required>
+      <br>
+      <br>
+      <br>
+    <label>Name</label>
+      <input type="text" name="name" placeholder="Name">
+      <br>
+      <br>
+      <br>
+      <input type="submit" value="Register"/>           
+  </form>
+</div>
+{% endblock %}

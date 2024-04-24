@@ -1,0 +1,44 @@
+<!--Used W3 schools for bootstap-->
+{% extends "base.html" %}
+{% block content %}
+<style>
+    .container-sm{
+        text-align: center;
+        font-weight: bold;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        margin-top: 100px;
+        margin-bottom: 100px;
+        margin-right: 600px;
+        margin-left: 600px;
+        padding-bottom: 20px;
+        padding-top: 100px;
+        border: 10px solid white;
+        background-color: black;
+    }
+    a{
+        color: white;
+    }
+
+</style>
+
+<div class="container-sm">
+    {% if latest_question_list %}
+    <ul>
+        {% for question in latest_question_list %}
+        <li>
+            <a href = "{% url 'rockband:detail' question.id %}">
+                {{ question.question_text }}
+            </a>
+        </li>
+        <br>
+        <br>
+        <br>
+        {% endfor %}
+    </ul>
+    {% else %}
+    <p>No polls are available.</p>
+    {% endif %}
+    <br>
+    <a href="{% url 'home' %}">back</a>
+</div>
+{% endblock %}

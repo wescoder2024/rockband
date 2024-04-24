@@ -1,0 +1,35 @@
+<!--REFERENCES-->
+<!--Vincent.WN.2024.Django Login, Logout, Signup, Password Change, and Password Reset[online]Available from: https://learndjango.com/tutorials/django-login-and-logout-tutorial
+[Accessed 19 march 2024]-->
+{% extends "base.html" %}
+
+{% block content %}
+<style>
+    .container-sm{
+        text-align: center;
+        font-weight: bold;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: black;
+        margin-top: 50px;
+        margin-bottom: 600px;
+        margin-right: 600px;
+        margin-left: 600px;
+        padding: 100px;
+        border: 10px solid black;
+        background-color:white;
+    }
+    a{
+        color: black;
+    }
+</style>
+
+<div class="container-sm">
+    <a href="{% url 'rockband:login' %}">Log In</a>
+    <br>
+    <br>   
+    <a href="{% url 'rockband:register' %}">Register</a>
+    <br>
+    <br>
+    <a href="{% url 'rockband:blog' %}"> Go to blog</a>
+</div>
+{% endblock %}

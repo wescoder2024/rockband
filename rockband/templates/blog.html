@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% block content %}
+<style>
+    .container-sm{
+        text-align: center;
+        font-weight: bold;
+        font-family:Arial, Helvetica, sans-serif;
+        color: white;
+        margin-top: 50px;
+        margin-bottom: 600px;
+        margin-right: 600px;
+        margin-left: 600px;
+        padding: 100px;
+        border: 10px solid white;
+        background-color:black;
+    }
+    a{
+        color:white;
+    }
+</style>
+
+<div class="container-sm">
+    {% for post in object_list %}
+        <h5>{{ post.date|date:"Y-m-d" }}<br><a href="/rockband/{{post.id}}">{{ post.title }}</a></h5> 
+        <a href="{% url 'rockband:post' post.id  %}">Read More &rarr;</a>
+    {% endfor %}
+    <br>
+    <br>
+    <br>
+    <a href="{% url 'home' %}">back</a>
+</div>
+
+{% endblock %}

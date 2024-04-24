@@ -1,0 +1,22 @@
+<!--Background image from www.pngegg.com-->
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> User Authentication</title>
+        <style>
+             body{
+                background-image: url("{% static 'images/pngegg.png' %}");
+             }
+        </style>
+    </head>
+
+
+    <body>
+        <div>
+            {% block content %}
+             
+            {% endblock %}
+        </div>
+    </body>
+</html>

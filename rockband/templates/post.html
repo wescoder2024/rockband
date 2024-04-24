@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% block content %}
+<style>
+    .container-sm{
+        text-align: center;
+        font-weight: bold;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        color: white;
+        margin-top: 50px;
+        margin-bottom: 600px;
+        margin-right: 300px;
+        margin-left: 300px;
+        padding: 100px;
+        border: 10px solid white;
+        background-color:black;
+    }
+    a{
+        color: white;
+    }
+</style>
+
+<div class="container-sm">
+    <h3><a href="/rockband/{{post.id}}">{{ post.title }}</a></h3>
+    <h6> on {{ post.date }}</h6>
+    <div class = "container">
+        {{ post.body|safe|linebreaks}}
+    </div>
+    <br><br>
+    <a href="{% url 'rockband:blog' %}">back</a>
+    <br>
+    <br>
+    <br>
+    <a href="{% url 'home' %}">home</a>
+</div>
+{% endblock %}
