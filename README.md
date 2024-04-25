@@ -3,7 +3,7 @@ Table of Contents:
   2. Description of project
   3. Installation guide
   4. Usage guide
-  5. Credit and references
+  5. Credits
 
 1.Name of project: Sales webpage
 
@@ -24,3 +24,9 @@ Table of Contents:
    ![Screenshot (38)](https://github.com/wescoder2024/rockband/assets/167479161/3e0d454d-93d9-45a6-a0be-5a8960157efc)
    
    ![Screenshot (37)](https://github.com/wescoder2024/rockband/assets/167479161/407093f4-5380-4676-8f4e-16a16a74eb63)
+
+5. Credits:
+   images from websites/authors:
+   Vexels.com, bloodhorse.com, stallionsguide.com, hoovesblog.com, Nancy Sexton(southafricanracehorse.wordpress.com), Alsosusieq(Pinterest.co.uk.), thevaulthorseracing.wordpress.com,
+   www.sportingpost.co.za, 
+   
