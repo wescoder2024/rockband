@@ -1,0 +1,19 @@
+.pagetitle{
+    padding: 30px;
+    color: blue;
+}
+
+img:hover{
+    transform: scale(1.3);
+    z-index:2;
+}
+
+.container{
+    width: fit-content;
+    text-align: center;
+    padding: 5px 10px;
+}
+p{
+    color: blue;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
