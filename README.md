@@ -7,5 +7,4 @@ Table of Contents:
 
 1.Name of project: Sales webpage
 
-
 2.Description: This project is a fictional online shop website. A shop to buy racehorses
