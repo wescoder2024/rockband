@@ -28,5 +28,5 @@ Table of Contents:
 5. Credits:
    images from websites/authors:
    Vexels.com, bloodhorse.com, stallionsguide.com, hoovesblog.com, Nancy Sexton(southafricanracehorse.wordpress.com), Alsosusieq(Pinterest.co.uk.), thevaulthorseracing.wordpress.com,
-   www.sportingpost.co.za, 
+   www.sportingpost.co.za 
    
